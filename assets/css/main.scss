@@ -1,0 +1,80 @@
+/* Local Google Font */
+
+@font-face {
+  src: url(../fonts/KaushanScript-Regular.ttf);
+  font-family: Kaushan;
+}
+
+/* Reset Style */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* HTML,Body Style */
+html,
+body {
+  // font-family: Kaushan;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+  width: 100%;
+  height: 100%;
+  background-color: #ddd;
+}
+
+header {
+  font-family: Kaushan;
+}
+
+/* Active Link */
+.navbar-dark .navbar-nav .active {
+  color: white;
+}
+
+/* Link Hover */
+
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: yellow;
+}
+
+/* Brand */
+.navbar-dark .navbar-brand,
+.navbar-dark .navbar-brand:focus,
+.navbar-dark .navbar-brand:hover {
+  color: yellow;
+}
+
+/* Landing Page */
+.hero {
+  position: relative;
+  background: url("../img/desperados-iii.jpg") no-repeat center center fixed;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  display: table;
+  font-family: Kaushan;
+}
+
+.landing-content {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.responsive {
+  width: 70px;
+  height: 70px;
+  transition: 0.5s ease-in-out;
+}
+
+.hero h1 {
+  font-size: 5rem;
+  font-weight: 900;
+  color: azure;
+}
+
+.hero h4 {
+  font-weight: 700;
+  color: orangered;
+}
