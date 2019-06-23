@@ -107,3 +107,53 @@ header {
     margin: 10px;
   }
 }
+
+/* Footer Section */
+.product a {
+  text-decoration: none;
+  color: #212529 !important;
+}
+
+.footer-copyright {
+  color: white;
+}
+
+.footer-copyright a {
+  text-decoration: none;
+  color: rgb(228, 228, 13) !important;
+  /* font-size: 2rem; */
+  font-family: Kaushan;
+}
+
+.footer-copyright {
+  background-color: #dc3545 !important;
+}
+
+/* Font Awesome Styling */
+
+.fa,
+.fas {
+  font-weight: 900;
+  color: cadetblue;
+}
+
+.fa-paper-plane {
+  color: cornsilk;
+}
+
+.fa-facebook,
+.fa-twitter,
+.fa-google-plus,
+.fa-linkedin,
+.fa-instagram {
+  font-size: 2rem;
+}
+
+.fa-facebook:hover,
+.fa-twitter:hover,
+.fa-google-plus:hover,
+.fa-linkedin:hover,
+.fa-instagram:hover {
+  color: aquamarine !important;
+  transition: 0.5s ease;
+}
