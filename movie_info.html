@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Movie World</title>
+    <!--- BootStarp --->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+
+    <!--- FontAwesome --->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    />
+
+    <!--- Custom CSS --->
+    <link rel="stylesheet" href="assets/css/main.css" />
+  </head>
+
+  <body>
+    <!--- Navabr Bootstrap --->
+
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-danger">
+      <a class="navbar-brand" href="#">Movie World</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html" data-scroll
+              >Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <!-- <li class="nav-item">
+                    <a class="nav-link" href="index.html" data-scroll>Search</a>
+                </li> -->
+          <li class="nav-item">
+            <a class="nav-link" href="#contact" data-scroll>Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!--- End of Navabr --->
+
+    <!--- Space Div --->
+
+    <div id="space" style="height:100px;"></div>
+
+    <!--- End of Space Div --->
+
+    <!--- Movie Info --->
+
+    <div class="container">
+      <div id="movieInfo" class="well container"></div>
+    </div>
+
+    <!--- End Movie Info --->
+
+    <!--Section: Contact-->
+    <section id="contact" class="mt-5 contact">
+      <!-- Heading -->
+      <h2 class="mb-5 font-weight-bold text-center text-uppercase">
+        Contact us
+      </h2>
+
+      <!--Grid row-->
+      <div class="row">
+        <!--Grid column-->
+        <div class="col-lg-5 col-md-12">
+          <!-- Form contact -->
+          <form class="p-5">
+            <div class="md-form form-sm">
+              <i class="fas fa-user prefix"></i>
+              <input
+                type="text"
+                id="form1"
+                class="form-control form-control-sm"
+              />
+              <label for="form3">Your name</label>
+            </div>
+            <div class="md-form form-sm">
+              <i class="fas fa-envelope prefix"></i>
+              <input
+                type="text"
+                id="form2"
+                class="form-control form-control-sm"
+              />
+              <label for="form2">Your email</label>
+            </div>
+            <div class="md-form form-sm">
+              <i class="fas fa-tag prefix"></i>
+              <input
+                type="text"
+                id="form3"
+                class="form-control form-control-sm"
+              />
+              <label for="form34">Subject</label>
+            </div>
+            <div class="md-form form-sm">
+              <i class="fas fa-pencil-alt prefix"></i>
+              <textarea
+                type="text"
+                id="form4"
+                class="md-textarea form-control form-control-sm"
+                rows="4"
+              ></textarea>
+              <label for="form8">Your message</label>
+            </div>
+            <div class="text-center mt-2">
+              <button class="btn btn-success">
+                Send <i class="fas fa-paper-plane ml-1"></i>
+              </button>
+            </div>
+          </form>
+          <!-- End Of Form contact -->
+        </div>
+        <!--End Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-7 col-md-12">
+          <!--Grid row-->
+          <div class="row text-center">
+            <!--Grid column-->
+            <div class="col-lg-4 col-md-12 mb-3">
+              <p>
+                <i class="fas fa-map fa-1x mr-2 grey-text"></i>Tramore,
+                Waterford
+              </p>
+            </div>
+            <!-- End Of Grid column-->
+
+            <!--Grid column-->
+            <div class="col-lg-4 col-md-6 mb-3">
+              <p>
+                <i class="fas fa-building fa-1x mr-2 grey-text"></i>Mon - Fri,
+                8:00-19:00
+              </p>
+            </div>
+            <!-- End Of Grid column-->
+
+            <!--Grid column-->
+            <div class="col-lg-4 col-md-6 mb-3">
+              <p>
+                <i class="fas fa-phone fa-1x mr-2 grey-text"></i>+ 353 830 000
+                000
+              </p>
+            </div>
+            <!-- End Of Grid column-->
+          </div>
+          <!--Grid row-->
+
+          <!--Google map-->
+          <div
+            id="map-container"
+            class="z-depth-1-half map-container mb-5 p-5"
+            style="height: 400px"
+          ></div>
+        </div>
+        <!--End Of Grid column-->
+      </div>
+    </section>
+    <!--Section: Contact-->
+
+    <!--Footer-->
+    <footer>
+      <!-- Social buttons -->
+      <div class="bg-danger">
+        <div class="container">
+          <!--Grid row-->
+          <div class="row py-4 d-flex align-items-center">
+            <!--Grid column-->
+            <div
+              class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0"
+            >
+              <h6 class="mb-0 text-light">
+                Get connected with us on social networks!
+              </h6>
+            </div>
+            <!-- End Of Grid column-->
+
+            <!--Grid column-->
+            <div class="col-md-6 col-lg-7 text-center text-md-right">
+              <!--Facebook-->
+              <a class="fb-ic ml-0" href="#"
+                ><i class="fab fa-facebook text-light mr-4"> </i
+              ></a>
+              <!--Twitter-->
+              <a class="tw-ic" href="#">
+                <i class="fab fa-twitter text-light mr-4"> </i
+              ></a>
+              <!--Google +-->
+              <a class="gplus-ic" href="#"
+                ><i class="fab fa-google-plus text-light mr-4"> </i
+              ></a>
+              <!--Linkedin-->
+              <a class="li-ic" href="#"
+                ><i class="fab fa-linkedin text-light mr-4"> </i
+              ></a>
+              <!--Instagram-->
+              <a class="ins-ic" href="#"
+                ><i class="fab fa-instagram text-light mr-lg-4"> </i
+              ></a>
+            </div>
+            <!-- End Of Grid column-->
+          </div>
+          <!-- End Of Grid row-->
+        </div>
+      </div>
+
+      <!--Footer Links-->
+      <div class="container mt-5 mb-4 text-center text-md-left">
+        <div class="row mt-3">
+          <!--First column-->
+          <div
+            class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 mt-3 footerBrand"
+          >
+            <h6 class="text-uppercase font-weight-bold">
+              <strong>MOVIE WORLD</strong>
+            </h6>
+            <hr
+              class="bg-info mb-4 mt-0 d-inline-block mx-auto"
+              style="width: 125px;"
+            />
+            <p>
+              We are here to provide our valuable user, informtion about Movies
+              and Movie Description, Rating, IMDB Rating and RottenTomato
+              Retting to help our users to pick which movies to watch. We hope
+              to provide best information to our users so that they can find a
+              movie or TV shows to watch. We belive good information helps
+              people decide which movie to watch and insted of wasting time.
+              Feel free to user our service. We have you enjoy our site.
+            </p>
+          </div>
+          <!-- End Of First column-->
+
+          <!--Second column-->
+
+          <div
+            class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 mt-3 footerProducts"
+          >
+            <h6 class="text-uppercase font-weight-bold">
+              <strong>Products</strong>
+            </h6>
+            <hr
+              class="bg-info mb-4 mt-0 d-inline-block mx-auto"
+              style="width: 95px;"
+            />
+            <p class="product">
+              <a href="#!">Movies Info</a>
+            </p>
+            <p class="product">
+              <a href="#!">Movies Description</a>
+            </p>
+            <p class="product">
+              <a href="#!">Rating</a>
+            </p>
+            <p class="product">
+              <a href="#!">IMDB Rating</a>
+            </p>
+            <p class="product">
+              <a href="#!">RottenTomato Rating</a>
+            </p>
+          </div>
+
+          <!-- End Of Second column-->
+
+          <!--Third column-->
+
+          <div
+            class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 mt-3 footerContact"
+          >
+            <h6 class="text-uppercase font-weight-bold">
+              <strong>Contact</strong>
+            </h6>
+            <hr
+              class="bg-info mb-4 mt-0 d-inline-block mx-auto"
+              style="width: 85px;"
+            />
+            <p><i class="fa fa-home mr-3"></i> Tramore, Waterford</p>
+            <p><i class="fa fa-envelope mr-3"></i> info@movieworld.com</p>
+            <p><i class="fa fa-phone mr-3"></i> + 353 830 000 000</p>
+            <p><i class="fa fa-print mr-3"></i> + 353 830 000 000</p>
+          </div>
+        </div>
+      </div>
+      <!--End Of Footer Links-->
+
+      <!-- Copyright -->
+      <div class="footer-copyright text-center py-3">
+        © 2019 Copyright:
+        <a href="#" class="footer-brand"> Movie World</a>
+      </div>
+      <!-- End Of Copyright -->
+    </footer>
+    <!--End Of Footer-->
+
+    <!--- Jquery Script --->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+
+    <!--- Proper JS  --->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+    <!--- BootStarp Script --->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <!--- Smooth Scroll Script --->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/16.0.3/smooth-scroll.min.js"></script>
+
+    <!--- Axios Script --->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js"></script>
+
+    <!--- Smooth Scroll Script Init --->
+    <script src="assets/js/smooth-scroll-inIt.js"></script>
+
+    <!--- API Custom Script API --->
+    <script src="assets/js/main.js"></script>
+    <!--- API Custom Script API Init --->
+    <script>
+      getMovie();
+    </script>
+
+    <!--- Map Script Init --->
+    <script src="assets/js/map_init.js"></script>
+    <!--- Map Script --->
+    <script
+      async
+      defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDfpfKbDRgn_JbAHtVeNyRxWcOgp7793Ow&callback=initMap"
+    ></script>
+  </body>
+</html>
