@@ -77,4 +77,31 @@ header {
   font-weight: 700;
   color: orangered;
 }
+
+/* Search Section  */
+.search h1 {
+  color: chocolate;
+  font-size: 4rem;
+  font-weight: 800;
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  background: transparent !important;
+}
+
+/* Contact Section */
+.contact h2 {
+  font-size: 3rem;
+  color: #a52a2a;
+}
+
+@media (max-width: 992px) {
+  #map-container {
+    margin: 10px;
+  }
+}
 /*# sourceMappingURL=main.css.map */
