@@ -6,15 +6,23 @@ Not sure which movie to watch then simple use our site We will do the work and f
 
 ```bash
 # Hi I'm Syed. Am a enthusiastic Web Development.
-# I am new to Web Development. I like helping people so I have created this "Movie World" site to help people search for movies and find more information about the movie before making their mind up which movie they would like to watch at the weekends and make plan accordingly.
+# I am new to Web Development. I like helping people so I have created this
+"Movie World" site to help people search for movies and find more
+information about the movie before making their mind up which movie
+they would like to watch at the weekends and make plan accordingly.
 ```
 
 ## About The Site
 
 ```bash
-# We are here to provide our valuable user, informtion about Movies   and Movie Description, Rating, IMDB Rating and RottenTomato Retting to help our users to pick #which movies to watch.
-# We hope to provide best information to our users so that they can   find a movie or TV shows to watch.
-# We belive good information helps people decide which movie to watch and insted of wasting time. Feel free to user our service. We have you enjoy our site.
+# We are here to provide our valuable user, informtion about Movies and 
+Movie Description, Rating, IMDB Rating and RottenTomato Retting to help 
+our users to pick #which movies to watch.
+# We hope to provide best information to our users so that they can 
+find a movie or TV shows to watch.
+# We belive good information helps people decide
+which movie to watch and insted of wasting time. Feel free to user our service. 
+We have you enjoy our site.
 ```
 
 ## Languange and Usage
