@@ -17,7 +17,6 @@ function getMovies(searchText) {
   axios
     .get("https://www.omdbapi.com/?s=" + searchText + "&apikey=bfae7d3")
     .then(res => {
-      // console.log(res);
       //Setting User Serach to Data From API
       let movies = res.data.Search;
 
@@ -74,9 +73,6 @@ function getMovie() {
   axios
     .get("https://www.omdbapi.com/?i=" + movieID + "&apikey=bfae7d3")
     .then(res => {
-      // console.log(res);
-      // console.log(res.data.Plot);
-
       //Initial State
       let movie = res.data;
 
