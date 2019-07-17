@@ -1,3 +1,8 @@
+/*
+Using document ready function to excicute 
+Using 'Document Ready()' function to detects this state of the page then used jQuery to Select the from with ID of searchForm.  And getting the user input.  And stopping default behaviour using 'preventDefault()'. Alos passing the user input to 'getmovies()' function.
+*/
+
 $(document).ready(() => {
   // alert(1);
   $("#searchForm").on("submit", e => {
@@ -7,13 +12,19 @@ $(document).ready(() => {
   });
 });
 
+// Making API Call Using AXIOS
 function getMovies(searchText) {
   axios
     .get("https://www.omdbapi.com/?s=" + searchText + "&apikey=bfae7d3")
     .then(res => {
-      console.log(res);
+      // console.log(res);
+      //Setting User Serach to Data From API
       let movies = res.data.Search;
+
+      //Initial State
       let output = "";
+
+      // Using jQuery 'each()' function to loop through movies data pulled from API.
       $.each(movies, (index, movie) => {
         output += `
                   <div class="col-md-4 ">
@@ -34,12 +45,18 @@ function getMovies(searchText) {
           `;
       });
 
+      // Rendering to out Movies div
       $("#movies").html(output);
     })
+    //Checking for Any Error
     .catch(err => {
       console.log(err);
     });
 }
+
+/*
+ When the user selects a movie 'movieSelected()'  function is called and selected movies 'moviesID ' store in our browser  'localStorage'. 
+ */
 
 function movieSelected(id) {
   sessionStorage.setItem("movieID", id);
@@ -47,15 +64,23 @@ function movieSelected(id) {
   return false;
 }
 
+/**
+ When the user selects a specific movie  'getMovie()'  function is called and shows movie details.
+ */
 function getMovie() {
   let movieID = sessionStorage.getItem("movieID");
 
+  // Making API Call Using AXIOS only for the movie user selected
   axios
     .get("https://www.omdbapi.com/?i=" + movieID + "&apikey=bfae7d3")
     .then(res => {
-      console.log(res);
-      console.log(res.data.Plot);
+      // console.log(res);
+      // console.log(res.data.Plot);
+
+      //Initial State
       let movie = res.data;
+
+      // Outputting Selected Movies Details
       let output = `
                   <div class="row">
                       <div class="col-md-4">
@@ -106,8 +131,11 @@ function getMovie() {
               
               `;
 
+      // Rendering Data to the page
       $("#movieInfo").html(output);
     })
+
+    // Checking for any error
     .catch(err => {
       console.log(err);
     });
